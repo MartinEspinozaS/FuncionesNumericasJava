@@ -23,13 +23,26 @@ class Main {
           li = Integer.parseInt(lim);
           switch (o) {
             case 1:
-              System.out.println(fibo(li));
+              if(li>150000000 || li<=0){
+                  System.out.println("El rango del limite es de 1 a 150000000");
+              } else {
+                System.out.println(fibo(li));
+              }
+              
             break; 
             case 2:
+            if(li>150000000 || li<=0){
+                  System.out.println("El rango del limite es de 1 a 150000000");
+              } else {
               System.out.println(padovan(li));
+              }
             break; 
             case 3:
+            if(li>15 || li<=0){
+                  System.out.println("El rango del limite es de 1 a 15");
+              } else {
               pascal(li);
+              }
             break; 
           }
         } else if (validacion(lim) == false){
